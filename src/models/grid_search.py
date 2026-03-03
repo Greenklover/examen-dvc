@@ -10,9 +10,9 @@ def main():
 
     model = GradientBoostingRegressor( random_state = 43 )
     grid = {
-        n_estimators: [ 100 , 200 ]
-        learning_rate: [ 0.05 , 0.1 ]
-        max_depth: [ 2 , 3 ]
+        "n_estimators": [ 100 , 200 ]
+        ,"learning_rate": [ 0.05 , 0.1 ]
+        ,"max_depth": [ 2 , 3 ]
     }
 
     gs = GridSearchCV(
